@@ -1673,7 +1673,8 @@
                 var element = $(this).get(0);
 
                 if( !element.hasAttribute('data-keepplaying') && typeof element.pause === 'function' ) {
-                    element.pause();
+                    // element.pause();
+                    element.play();
                 }
             });
 
