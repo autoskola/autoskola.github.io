@@ -104,7 +104,7 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				verticalCentered: true,
-				sectionsColor: ['#1bbc9b', '#1a1a1a'],
+				sectionsColor: ['#1bbc9b', '#ffffff'],
 				afterRender: function(){
 
 
@@ -132,8 +132,14 @@
 	
 	<div class="section" id="section1">
 		<h1 style="padding-top:50px;">Kontakt</h1>
-	</div>
-	
+		<div style="width:50%; text-align: left;">
+			<form action="">
+				<label style="font-size:1.5em;">Jiméno:</label><br><br>
+				<input id="jimeno" type="text" name="jimeno" style="width:80%; padding:12px 12px; margin:8px 0; box-sizing: border-box;font-size:1.0em;">
+			</form>
+		</div>
+		<div style="width:50%;"></div>
+	</div>	
 </div>
 
 </body>
