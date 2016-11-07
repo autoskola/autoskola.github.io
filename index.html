@@ -4,30 +4,26 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Autoškola Trešl</title>
-	
-
 	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="examples.css" />
 	<style>
 
 	/* Style for our header texts
 	* --------------------------------------- */
 	h1{
 		font-size: 5em;
-		font-family: arial,helvetica;
 		margin:0;
 		padding:0;
 	}
-
 	h2{
 		font-size:2em;
-		font-family: arial,helvetica;
 	}
-
 	h3{
 		font-size:1.5em;
-		font-family: arial,helvetica;
 	}
+	body{
+	font-family: arial,helvetica;
+	color: rgba(0,0,0,1);
+}
 
 	#section0 h1, h2, h3{
 		color:#fff;
@@ -78,12 +74,6 @@
 		overflow: hidden;
 	}
 
-
-	/* Bottom menu
-	* --------------------------------------- */
-	#infoMenu li a {
-		color: #fff;
-	}
 	</style>
 
 	<!--[if IE]>
@@ -119,7 +109,7 @@
 <body>
 
 <div id="fullpage">
-	<div class="section " id="section0">
+	<div class="section" id="section0">
 		<video autoplay loop muted id="myVideo">
 			<source src="video.mp4" type="video/mp4">
 		</video>
@@ -131,14 +121,45 @@
 	</div>
 	
 	<div class="section" id="section1">
-		<h1 style="padding-top:50px;">Kontakt</h1>
-		<div style="width:50%; text-align: left;">
-			<form action="">
-				<label style="font-size:1.5em;">Jiméno:</label><br><br>
-				<input id="jimeno" type="text" name="jimeno" style="width:80%; padding:12px 12px; margin:8px 0; box-sizing: border-box;font-size:1.0em;">
-			</form>
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.1012603393497!2d14.699980439469465!3d49.38479340752345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470cbd15a0942d5d%3A0x2e038264f59e0943!2zS2UgSHbEm3pkw6FybsSbIDEwNTksIDM5MSAwMiBTZXppbW92byDDmnN0w60!5e0!3m2!1sen!2scz!4v1478513109683" width="100%" height="35%" frameborder="0" style="border:0"  allowfullscreen></iframe>
+		
+		<div>
+			<div style="width:50%;height:65vh;float:left; display:table;">
+				<div style="width:100%;height:100%; display:table-cell;vertical-align: middle">
+					<p style="font-size:2em;">Autoškola Trešl</p>
+					<p style="font-size:1.5em;">Ke Hvězdárně 1059<br>
+39102 Sezimovo Ústí <br>
+IČO: 721848261<br>
+TEL: 123 456 789
+				</p>
+				</div>
+			</div>
+
+			<div style="width:50%;height:65vh;float:left; display: table;">
+			<div style="width:100%;height:100%; display:table-cell;vertical-align: middle">
+				<form action="" method="post" autocomplete="on">
+				<input type="hidden" name="sub_actions" value="confirm">
+				<!-- name -->
+                  <label style="font-size:1.2em;" for="name"></label>
+                  <input style="width:70%;padding:5px 5px; font-size:1.2em;" id="name" name="name" type="text" value="" placeholder="Jiméno" required/><br><br>
+				<!-- email -->
+                  <label style="font-size:1.2em;" for="name"></label>
+                  <input style="width:70%;padding:5px 5px; font-size:1.2em;" id="name" name="name" type="text" value="" placeholder="Email" required/><br><br>
+                  				<!-- telefon -->
+                  <label style="font-size:1.2em;" for="name"></label>
+                  <input style="width:70%;padding:5px 5px; font-size:1.2em;" id="name" name="name" type="text" value="" placeholder="Telefon" required/><br><br>
+                  <!-- dotaz -->
+                  <label style="font-size:1.2em;" for="name"></label>
+                  <textarea style="width:72.5%; height:80px; box-sizing: border-box; resize:none; font-size:1.5em;padding:5px 5px;" placeholder="Dotaz"></textarea><br><br>
+                  <input style="width:72.5%; background-color: grey; font-size:1.2em;border:none; color:white; padding:16px 32px; text-decoration: none; margin:4px 2px; cursor: pointer;" type="button" value="Poslat">
+
+</form>
+</div>
+			</div>
+
 		</div>
-		<div style="width:50%;"></div>
+		
 	</div>	
 </div>
 
