@@ -1,3 +1,64 @@
+<?php
+
+$add_header="From:info@tldvision.com\r\n";
+$add_header	.= "Reply-to: info@tldvision.com\r\n";
+$add_header	.= "X-Mailer: PHP/". phpversion();
+$opt = '-f'.'sayaka.nishitani@gmail.com'; 
+
+$message =<<<HTML
+This is an automatically generated email from TLD Vision. Thank you for your application.
+
+-----
+
+1) Jiméno:
+
+{$_POST['name']}
+
+2) Email:
+
+{$_POST['email']}
+
+3) Telefon:
+
+{$_POST['tel']}
+
+4) Dotaz:
+
+{$_POST['dotaz']}
+
+-----
+
+We will contact you to the provided email address. If you have mistakes in the form or do not receive an email from us within 7 days, please contact us to: info@tldvision.com 
+
+
+Best regards,
+
+TLD Vision s.r.o.
+tldvision.com
+
+
+HTML;
+
+
+  
+// カレントの言語を日本語に設定する
+// mb_language("ja");
+// 内部文字エンコードを設定する　このエンコード指定は大昔の携帯だとShift-jisにしないとだめだったとか。
+// 今はUTF-8にしておけばだいたいOKだから、楽な時代になったもんだよ。
+mb_internal_encoding("UTF-8");
+mb_send_mail($_POST['email'],"Auto-reply from TLD Vision: Thank you for your interest in TLD Vision.",$message,$add_header,$opt);
+//mb_send_mail($_POST['e_mail'],"TLD Demo request",$message,$add_header,$opt);
+//mb_send_mailは5つの設定項目がある
+//mb_send_mail(送信先メールアドレス,"メールのタイトル","メール本文","メールのヘッダーFromとかリプライとか","送信エラーを送るメールアドレス");
+//5番目の情報は第5引数と呼ばれるものでして、これがないと迷惑メール扱いになることも。
+
+
+
+//マスター管理者にも同じメールを送りつける！！
+mb_send_mail('sayaka.nishitani@gmail.com',"TLD Career Application",$message,$add_header,$opt);
+
+?>
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
