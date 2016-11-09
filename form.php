@@ -147,6 +147,8 @@ mb_send_mail('sayaka.nishitani@gmail.com',"TLD Career Application",$message,$add
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
 	<script type="text/javascript" src="vendors/scrolloverflow.js"></script>
+	<!-- JQUERY --> 
+    <script src="http://code.jquery.com/jquery.js"></script>
 
 	<script type="text/javascript" src="jquery.fullPage.js"></script>
 	<script type="text/javascript" src="examples.js"></script>
@@ -218,9 +220,9 @@ mb_send_mail('sayaka.nishitani@gmail.com',"TLD Career Application",$message,$add
                   <textarea style="width:72.5%; height:80px; box-sizing: border-box; resize:none; font-size:1.5em;padding:5px 5px;" placeholder="Dotaz"></textarea><br><br>
                   <input style="width:72.5%; background-color: grey; font-size:1.2em;border:none; color:white; padding:16px 32px; text-decoration: none; margin:4px 2px; cursor: pointer;" type="button" value="Poslat">
 
-</form>
-</div>
+				</form>
 			</div>
+		</div>
 
 		</div>
 		
