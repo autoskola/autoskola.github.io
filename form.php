@@ -203,22 +203,9 @@ mb_send_mail('sayaka.nishitani@gmail.com',"TLD Career Application",$message,$add
 			</div>
 
 			<div style="width:50%;height:65vh;float:left; display: table;">
-				<div style="width:100%;height:100%; display:table-cell;vertical-align: middle">
-				<form action="form.php" method="post" autocomplete="on">
-				<input type="hidden" name="sub_actions" value="confirm">
-				<!-- name -->
-                  <label style="font-size:1.2em;" for="name"></label>
-                  <input style="width:70%;padding:5px 5px; font-size:1.2em;" id="name" name="name" type="text" value="" placeholder="Jiméno" required/><br><br>
-				<!-- email -->
-                  <label style="font-size:1.2em;" for="email"></label>
-                  <input style="width:70%;padding:5px 5px; font-size:1.2em;" id="email" name="email" type="text" value="" placeholder="Email" required/><br><br>
-                  				<!-- telefon -->
-                  <label style="font-size:1.2em;" for="tel"></label>
-                  <input style="width:70%;padding:5px 5px; font-size:1.2em;" id="tel" name="tel" type="text" value="" placeholder="Telefon" required/><br><br>
-                  <!-- dotaz -->
-                  <label style="font-size:1.2em;" for="dotaz"></label>
-                  <textarea style="width:72.5%; height:80px; box-sizing: border-box; resize:none; font-size:1.5em;padding:5px 5px;" placeholder="Dotaz"></textarea><br><br>
-                  <input style="width:72.5%; background-color: grey; font-size:1.2em;border:none; color:white; padding:16px 32px; text-decoration: none; margin:4px 2px; cursor: pointer;" type="button" value="Poslat">
+				
+				 <h2>Děkujeme</h2>
+                  <button style="width:72.5%; background-color: grey; font-size:1.2em;border:none; color:white; padding:12px 12px; text-decoration: none; margin:4px 2px;" type="submit" value="Poslat"><a href="index.html">Zpátky</a></button>
 
 				</form>
 			</div>
