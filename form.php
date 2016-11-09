@@ -6,7 +6,7 @@ $add_header	.= "X-Mailer: PHP/". phpversion();
 $opt = '-f'.'sayaka.nishitani@gmail.com'; 
 
 $message =<<<HTML
-This is an automatically generated email from TLD Vision. Thank you for your application.
+
 
 -----
 
@@ -31,10 +31,9 @@ This is an automatically generated email from TLD Vision. Thank you for your app
 We will contact you to the provided email address. If you have mistakes in the form or do not receive an email from us within 7 days, please contact us to: info@tldvision.com 
 
 
-Best regards,
+S pozdravem,
 
-TLD Vision s.r.o.
-tldvision.com
+Autoškola Trešl
 
 
 HTML;
@@ -58,6 +57,8 @@ mb_send_mail($_POST['email'],"Auto-reply from TLD Vision: Thank you for your int
 mb_send_mail('sayaka.nishitani@gmail.com',"TLD Career Application",$message,$add_header,$opt);
 
 ?>
+
+
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -203,9 +204,21 @@ mb_send_mail('sayaka.nishitani@gmail.com',"TLD Career Application",$message,$add
 			</div>
 
 			<div style="width:50%;height:65vh;float:left; display: table;">
-				
-				 <h2>Děkujeme</h2>
-                  <button style="width:72.5%; background-color: grey; font-size:1.2em;border:none; color:white; padding:12px 12px; text-decoration: none; margin:4px 2px;" type="submit" value="Poslat"><a href="index.html">Zpátky</a></button>
+				<div style="width:100%;height:100%; display:table-cell;vertical-align: middle">
+				<form action="http://www.tldvision.com/autoskola/form.php" method="post" autocomplete="on">
+				<!-- name -->
+                  <label for="name"></label>
+                  <input style="width:70%;padding:5px 5px; font-size:1.2em;" id="name" name="name" type="text" value="" placeholder="Jiméno" required/><br><br>
+				<!-- email -->
+                  <label for="email"></label>
+                  <input style="width:70%;padding:5px 5px; font-size:1.2em;" id="email" name="email" type="email" value="" placeholder="Email" required/><br><br>
+                  				<!-- telefon -->
+                  <label for="tel"></label>
+                  <input style="width:70%;padding:5px 5px; font-size:1.2em;" id="tel" name="tel" type="tel" value="" placeholder="Telefon" required/><br><br>
+                  <!-- dotaz -->
+                  <label for="dotaz"></label>
+                  <textarea id="dotaz" name="dotaz" style="width:72.5%; height:80px; box-sizing: border-box; resize:none; font-size:1.5em;padding:5px 5px;" placeholder="Dotaz"></textarea><br><br>
+                  <button style="width:72.5%; background-color: grey; font-size:1.2em;border:none; color:white; padding:12px 12px; text-decoration: none; margin:4px 2px;" type="submit" value="Poslat">Poslat</button>
 
 				</form>
 			</div>
