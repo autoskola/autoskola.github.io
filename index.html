@@ -5,8 +5,11 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Autoškola Trešl</title>
 	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="form.css" />
 	<!-- JQUERY --> 
     <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="jquery-2.1.0.min.js"></script>
+    <script src="form.js"></script>
 	<style>
 
 	/* Style for our header texts
@@ -131,10 +134,10 @@
 
 				<div style="width:100%;height:100%; display:table-cell;vertical-align: middle">
 					
-					<p style="font-size:3em;"><b>TEL: 123 456 789</b></p>
+					<p style="font-size:3em;"><b>Autoškola Trešl</b></p>
 					
 					<p>
-					<span style="font-size:2.5em;"><b>Autoškola Trešl</b></span><br><br>
+					<span style="font-size:2.5em;"><b>TEL: 774 848 261</b></span><br><br>
 					<span style="font-size:2em;">Ke Hvězdárně 1059<br>39102 Sezimovo Ústí <br>IČO: 721848261</span>
 					</p>
 			
@@ -142,24 +145,39 @@
 			</div>
 
 			<div style="width:50%;height:65vh;float:left; display: table;">
+				
 				<div style="width:100%;height:100%; display:table-cell;vertical-align: middle">
-				<form action="http://www.tldvision.com/autoskola/form.php" method="post" autocomplete="on">
-				<!-- name -->
-                  <label for="name"></label>
-                  <input style="width:70%;padding:5px 5px; font-size:1.2em;" id="name" name="name" type="text" value="" placeholder="Jiméno" required/><br><br>
-				<!-- email -->
-                  <label for="email"></label>
-                  <input style="width:70%;padding:5px 5px; font-size:1.2em;" id="email" name="email" type="email" value="" placeholder="Email" required/><br><br>
-                  				<!-- telefon -->
-                  <label for="tel"></label>
-                  <input style="width:70%;padding:5px 5px; font-size:1.2em;" id="tel" name="tel" type="tel" value="" placeholder="Telefon" required/><br><br>
-                  <!-- dotaz -->
-                  <label for="dotaz"></label>
-                  <textarea id="dotaz" name="dotaz" style="width:72.5%; height:80px; box-sizing: border-box; resize:none; font-size:1.5em;padding:5px 5px;" placeholder="Dotaz"></textarea><br><br>
-                  <button style="width:72.5%; background-color: grey; font-size:1.2em;border:none; color:white; padding:12px 12px; text-decoration: none; margin:4px 2px;" type="submit" value="Poslat">Poslat</button>
+				
+					<div id="form-messages"></div>
+				
+					<form id="form" action="http://www.tldvision.com/php/form.php" method="post" autocomplete="on">
+						<!-- name -->
+						<div class="field">
+                  			<label for="name"></label>
+                  			<input id="name" name="name" type="text" value="" placeholder="Jiméno" required/>
+                		</div>
+						<!-- email -->
+						<div class="field">
+                  			<label for="email"></label>
+                 			 <input id="email" name="email" type="email" value="" placeholder="Email" required/>
+                		</div>
+                		<!-- telefon -->
+                		<div class="field">
+                  			<label for="tel"></label>
+                  			<input id="tel" name="tel" type="tel" value="" placeholder="Telefon" required/>
+                		</div>
+                		<!-- dotaz -->
+                		<div class="field">
+                  			<label for="dotaz"></label>
+                  			<textarea id="dotaz" name="dotaz" placeholder="Dotaz"></textarea>
 
-</form>
-</div>
+                		<!-- submit button -->
+                		<div class="field">
+                  			<button type="submit" value="Poslat">Poslat</button>
+                		</div>
+
+					</form>
+				</div>
 			</div>
 
 		</div>
